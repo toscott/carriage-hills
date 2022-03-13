@@ -1,9 +1,213 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+<head>
+    <!-- CSS only -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Carriage Hills Subdivision</title>
+    <style>
+      body {
+        padding-bottom: 70px;
+      }
+      .chalkboard-background {
+        background-image: url(dist/images/chalkboard.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      }
+      .hidden_desc {
+        display:none;
+        visibility:hidden;
+      }
+      .tabcontent {
+         display: none;
+      }
+      .light-link {
+        color: #0EE;
+      }
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    </style>
+    <script>
+ function change_tab(event, id)
+ {
+    var i, tabcontent, tablinks;
 
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tabcontent.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(id).style.display = "block";
+    evt.currentTarget.className += " active";
+ }
+
+
+
+    </script>
+</head>
+<body onload="change_tab(event, 'home')">
+<header class="p-3 bg-dark text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center">
+            <div class="col-xs-12 col-md-8">
+                <h4>Carriage Hills Subdivision</h4>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
+                    <li class="tablinks active" onclick="change_tab(event, 'home');">
+                        <a href="#" class="nav-link px-2 text-secondary">Home</a>
+                    </li>
+                    <li class="tablinks" onclick="change_tab(event, 'documents');">
+                        <a href="#" class="nav-link px-2 text-white">Documents</a>
+                    </li>
+                    <li class="tablinks" onclick="change_tab(event, 'events');">
+                        <a href="#" class="nav-link px-2 text-white">Events</a>
+                    </li>
+                    <li class="tablinks" onclick="change_tab(event, 'contacts');">
+                        <a href="#" class="nav-link px-2 text-white">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container my-5 tabcontent" id="home">
+    <h1>Carriage Hills Bulletin Board</h1>
+    <div class="row align-items-center">
+        <div class="my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>
+                Easter Egg Hunt
+            </h2>
+            <p>
+                The annual Easter Egg Hunt is back at the retention pond for 2022. Hop down to the pond at 1pm on
+                Saturday, April 2nd, for egg hunting and fun!
+            </p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>
+                Annual Dues Notice
+            </h2>
+            <p>
+                The 2022 annual assessment of $50.00 was due on 03/01/2022. Payments can be made via mail or
+                electronically through your
+                bank.
+            </p>
+            <p>
+                Make your check to:<br>
+                Carriage Hills Community Association
+            </p>
+            <p>
+                Mail to:<br>
+                Carriage Hills Homeowners<br> 2977 Hwy.K #128<br> O'Fallon 63368
+            </p>
+            <p>
+                Email the board at: carriagehillssubdivision@gmail.com for details on electronic transfer.
+            </p>
+            <p>
+                We appreciate the majority of homeowners pay their dues on time.
+            </p>
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div class="my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>
+                Annual Meeting
+            </h2>
+            <p>
+                The annual meeting was held Feb 22, 2022 at the St. Charles Community College (Dardenne Campus). Approximately 20
+                homeowners were in attendance.
+            </p>
+            <p>
+                Meeting minutes for available past and future meetings can be found under the Documents header.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container my-5 tabcontent" id="documents">
+    <h1>Documents</h1>
+    <div class="row">
+        <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>
+                Subdivision Documents
+            </h2>
+            <p>
+                <a href="https://google.com" class="light-link">Covenants (todo)</a>
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>
+                Architecture Control Committee
+            </h2>
+            <p>
+                Looking to put in a fence, shed, deck, patio or other structure? You will need to submit your project for
+                approval by the architecture control committee. Here are the steps before starting the project:
+            </p>
+            <ul>
+                <li>
+                    Review city guidelines.
+                </li>
+                <li>
+                    Review convenants.
+                </li>
+                <li>
+                    Obtain any necessary permits.
+                </li>
+                <li>
+                    Complete Architecture Review Submission form.
+                </li>
+                <li>
+                    Email form to carriagehillsacc@gmail.com.
+                </li>
+                <li>
+                    ACC will contact you with next steps.
+                </li>
+            </ul>
+            <p>
+                <a href="https://www.ofallon.mo.us/building-permits" class="light-link">O'Fallon Building and Permits</a>
+            </p>
+            <p>
+                <a href="https://google.com" class="light-link">Architecture Review Submission form (todo)</a>
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>
+                Meeting Minutes
+            </h2>
+            <p>
+                <a href="https://google.com" class="light-link">2022 Minutes (todo)</a>
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>
+                Financial Reports
+            </h2>
+            <p>
+                <a href="https://google.com" class="light-link">2021 (todo)</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="navbar fixed-bottom bg-dark text-white">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">Contact us: carriagehillssubdivision@gmail.com</div>
+                <div class="col-md-6">
+                    Social Media:
+                    <a href="https://www.facebook.com/groups/542163793119820">Facebook</a>
+                    <a href="https://nextdoor.com/g/xdmvgmtkk">Nextdoor</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
