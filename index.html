@@ -8,10 +8,20 @@
       body {
         padding-bottom: 70px;
       }
+      .active > a {
+        color: #64757d !important;
+      }
       .chalkboard-background {
         background-image: url(dist/images/chalkboard.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
+      }
+      .easter-egg-background {
+        background-image: url(dist/images/easter_eggs.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        width: 480px;
       }
       .hidden_desc {
         display:none;
@@ -19,6 +29,9 @@
       }
       .tabcontent {
          display: none;
+      }
+      .tablinks > a, .tablinks > a:hover {
+        color: white;
       }
       .light-link {
         color: #0EE;
@@ -44,11 +57,12 @@
 
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(id).style.display = "block";
-    evt.currentTarget.className += " active";
+    if (event.type !== "load") {
+        event.currentTarget.classList += " active";
+    } else {
+        document.getElementById("first-active").className += " active";
+    }
  }
-
-
-
     </script>
 </head>
 <body onload="change_tab(event, 'home')">
@@ -60,17 +74,17 @@
             </div>
             <div class="col-xs-12 col-md-4">
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
-                    <li class="tablinks active" onclick="change_tab(event, 'home');">
-                        <a href="#" class="nav-link px-2 text-secondary">Home</a>
+                    <li id="first-active" class="tablinks active" onclick="change_tab(event, 'home');">
+                        <a href="#" class="nav-link px-2 ">Home</a>
                     </li>
                     <li class="tablinks" onclick="change_tab(event, 'documents');">
-                        <a href="#" class="nav-link px-2 text-white">Documents</a>
+                        <a href="#" class="nav-link px-2">Documents</a>
                     </li>
                     <li class="tablinks" onclick="change_tab(event, 'events');">
-                        <a href="#" class="nav-link px-2 text-white">Events</a>
+                        <a href="#" class="nav-link px-2">Events</a>
                     </li>
-                    <li class="tablinks" onclick="change_tab(event, 'contacts');">
-                        <a href="#" class="nav-link px-2 text-white">Contact</a>
+                    <li class="tablinks" onclick="change_tab(event, 'contact');">
+                        <a href="#" class="nav-link px-2">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -141,6 +155,9 @@
             <p>
                 <a href="https://google.com" class="light-link">Covenants (todo)</a>
             </p>
+            <p>
+                <a href="https://google.com" class="light-link">Newsletter (todo)</a>
+            </p>
         </div>
         <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
             <h2>
@@ -148,7 +165,7 @@
             </h2>
             <p>
                 Looking to put in a fence, shed, deck, patio or other structure? You will need to submit your project for
-                approval by the architecture control committee. Here are the steps before starting the project:
+                approval by the Architecture Control Committee (ACC). Here are the steps before starting the project:
             </p>
             <ul>
                 <li>
@@ -191,6 +208,64 @@
             </h2>
             <p>
                 <a href="https://google.com" class="light-link">2021 (todo)</a>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container my-5 tabcontent" id="events">
+    <h1>Upcoming Events</h1>
+    <div class="row align-items-center">
+        <div class="my-2 py-2 rounded-3">
+            <div class="easter-egg-background">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container my-5 tabcontent" id="contact">
+    <h1>Contact Information</h1>
+    <div class="row">
+        <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>General Inquiries</h2>
+            <p>
+                General inquiries can be directed to the board:<br>
+                carriagehillssubdivision@gmail.com
+            </p>
+            <p>
+                Inquiries regarding project approvals can be directed to the ACC:<br>
+                carriagehillsacc@gmail.com
+
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>2022 HOA Board Members</h2>
+            <ul>
+                <li>
+                    Andrew - President
+                </li>
+                <li>
+                    Michael - Treasurer
+                </li>
+                <li>
+                    Tara - Secretary
+                </li>
+            </ul>
+            <h4>
+               Architecture Control Committee Coordinator
+            </h4>
+            <ul>
+                <li>
+                    Janice
+                </li>
+            </ul>
+        </div>
+        <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>Mailing List</h2>
+            <p>
+                The board sends out announcements and reminders via email to the subdivision mailing list. To
+                be added to the mailing list, contact the board at:<br>
+                carriagehillssubdivision@gmail.com
             </p>
         </div>
     </div>
