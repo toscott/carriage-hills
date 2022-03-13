@@ -8,7 +8,6 @@
       body {
         padding-bottom: 70px;
         background-color: #eee;
-        font-family: cursive;
       }
       .active > a {
         color: #64757d !important;
@@ -23,11 +22,26 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         height: 400px;
-        width: 480px;
+        width: 420px;
+        margin: auto
+      }
+      .header-row {
       }
       .hidden_desc {
         display:none;
         visibility:hidden;
+      }
+      .navigation ul{
+        display: inline-block;
+      }
+      .navigation li {
+        float: left
+      }
+      .page-title {
+      }
+      .site-title {
+         padding-top: 5px;
+         font-family: cursive;
       }
       .tabcontent {
          display: none;
@@ -38,7 +52,6 @@
       .light-link {
         color: #0EE;
       }
-
     </style>
     <script>
  function change_tab(event, id)
@@ -65,17 +78,18 @@
         document.getElementById("first-active").className += " active";
     }
  }
+
     </script>
 </head>
 <body onload="change_tab(event, 'home')">
 <header class="p-3 bg-dark text-white">
     <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center">
-            <div class="col-xs-12 col-md-8">
-                <h4>Carriage Hills Subdivision</h4>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 text-center site-title">
+                <h4 class="align-middle">Carriage Hills Subdivision</h4>
             </div>
-            <div class="col-xs-12 col-md-4">
-                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
+            <div class="col-xs-12 col-md-6 text-center navigation">
+                <ul class="nav mb-2 mb-md-0 text-center">
                     <li id="first-active" class="tablinks active" onclick="change_tab(event, 'home');">
                         <a href="#" class="nav-link px-2 ">Home</a>
                     </li>
@@ -93,8 +107,10 @@
         </div>
     </div>
 </header>
-<div class="container my-5 tabcontent" id="home">
-    <h1>Carriage Hills Bulletin Board</h1>
+<div class="container my-3 tabcontent" id="home">
+    <div class="row text-center page-title">
+        <h1>Carriage Hills Bulletin Board</h1>
+    </div>
     <div class="row align-items-center">
         <div class="my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
             <h2>
@@ -138,7 +154,8 @@
                 Annual Meeting
             </h2>
             <p>
-                The annual meeting was held Feb 22, 2022 at the St. Charles Community College (Dardenne Campus). Approximately 20
+                The annual meeting was held Feb 22, 2022 at the St. Charles Community College (Dardenne Campus).
+                Approximately 20
                 homeowners were in attendance.
             </p>
             <p>
@@ -147,18 +164,20 @@
         </div>
     </div>
 </div>
-<div class="container my-5 tabcontent" id="documents">
-    <h1>Documents</h1>
+<div class="container my-3 tabcontent" id="documents">
+    <div class="row text-center page-title">
+        <h1>Documents</h1>
+    </div>
     <div class="row">
         <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
             <h2>
                 Subdivision Documents
             </h2>
             <p>
-                <a href="https://google.com" class="light-link">Covenants (todo)</a>
+                <a href="http://carriage-hills-subdivision.s3-website.us-east-2.amazonaws.com/documents/carriage-hills-bylaws.pdf" class="light-link">Bylaws and amendments</a>
             </p>
             <p>
-                <a href="https://google.com" class="light-link">Newsletter (todo)</a>
+                Newsletter coming soon!
             </p>
         </div>
         <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
@@ -166,7 +185,8 @@
                 Architecture Control Committee
             </h2>
             <p>
-                Looking to put in a fence, shed, deck, patio or other structure? You will need to submit your project for
+                Looking to put in a fence, shed, deck, patio or other structure? You will need to submit your project
+                for
                 approval by the Architecture Control Committee (ACC). Here are the steps before starting the project:
             </p>
             <ul>
@@ -174,7 +194,7 @@
                     Review city guidelines.
                 </li>
                 <li>
-                    Review convenants.
+                    Review subdivision bylaws and amendments.
                 </li>
                 <li>
                     Obtain any necessary permits.
@@ -190,10 +210,11 @@
                 </li>
             </ul>
             <p>
-                <a href="https://www.ofallon.mo.us/building-permits" class="light-link">O'Fallon Building and Permits</a>
+                <a href="https://www.ofallon.mo.us/building-permits" class="light-link">O'Fallon Building and
+                    Permits</a>
             </p>
             <p>
-                <a href="https://google.com" class="light-link">Architecture Review Submission form (todo)</a>
+                Architecture Review Submission form coming soon!
             </p>
         </div>
         <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
@@ -201,7 +222,10 @@
                 Meeting Minutes
             </h2>
             <p>
-                <a href="https://google.com" class="light-link">2022 Minutes (todo)</a>
+                <a href="http://carriage-hills-subdivision.s3-website.us-east-2.amazonaws.com/annual-meetings/22-02-22-annualmeeting.docx" class="light-link">2022 Minutes</a>
+            </p>
+            <p>
+                <a href="http://carriage-hills-subdivision.s3-website.us-east-2.amazonaws.com/annual-meetings/2020-07-18-annualmeeting.pdr" class="light-link">2020 Minutes</a>
             </p>
         </div>
         <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
@@ -209,27 +233,30 @@
                 Financial Reports
             </h2>
             <p>
-                <a href="https://google.com" class="light-link">2021 (todo)</a>
+                Coming soon!
             </p>
         </div>
     </div>
 </div>
-<div class="container my-5 tabcontent" id="events">
-    <h1>Upcoming Events</h1>
-    <div class="row align-items-center">
-        <div class="my-2 py-2 rounded-3">
+<div class="container my-3 tabcontent" id="events">
+    <div class="row text-center page-title">
+        <h1>Upcoming Events</h1>
+    </div>
+    <div class="row">
+        <div class="my-2 py-2 rounded-3 text-center">
             <div class="easter-egg-background">
             </div>
-
         </div>
     </div>
 </div>
 
-<div class="container my-5 tabcontent" id="contact">
-    <h1>Contact Information</h1>
+<div class="container my-3 tabcontent" id="contact">
+    <div class="row text-center page-title">
+        <h1>Contact Information</h1>
+    </div>
     <div class="row">
         <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
-            <h2>General Inquiries</h2>
+            <h2>Inquiries</h2>
             <p>
                 General inquiries can be directed to the board:<br>
                 carriagehillssubdivision@gmail.com
@@ -254,7 +281,7 @@
                 </li>
             </ul>
             <h4>
-               Architecture Control Committee Coordinator
+                Architecture Control Committee Coordinator
             </h4>
             <ul>
                 <li>
@@ -265,9 +292,17 @@
         <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
             <h2>Mailing List</h2>
             <p>
-                The board sends out announcements and reminders via email to the subdivision mailing list. To
-                be added to the mailing list, contact the board at:<br>
+                Announcements and reminders are sent via email to a subdivision mailing list.
+            </p>
+            <p>
+                To be added to the mailing list, contact the board at: <br>
                 carriagehillssubdivision@gmail.com
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 my-2 py-2 rounded-3 border shadow-lg chalkboard-background text-white">
+            <h2>Changes to Website</h2>
+            <p>
+                <a class="light-link" href="https://github.com/toscott/carriage-hills/issues">Suggest a website change</a>
             </p>
         </div>
     </div>
@@ -278,7 +313,6 @@
             <div class="row py-2">
                 <div class="col-md-6 text-center">Contact us: carriagehillssubdivision@gmail.com</div>
                 <div class="col-md-6 text-center">
-                    Social Media:
                     <a class="light-link" href="https://www.facebook.com/groups/542163793119820">Facebook</a>
                     <a class="light-link" href="https://nextdoor.com/g/xdmvgmtkk">Nextdoor</a>
                 </div>
