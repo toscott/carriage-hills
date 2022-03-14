@@ -1,0 +1,44 @@
+body {
+  padding-bottom: 70px;
+  background-color: #eee;
+}
+.active > a {
+  color: #64757d !important;
+}
+.chalkboard-background {
+  background-image: url(../images/chalkboard.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.easter-egg-background {
+  background-image: url(../images/easter_eggs.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 400px;
+  width: 420px;
+  margin: auto
+}
+.navigation ul{
+  display: inline-block;
+}
+.navigation li {
+  float: left
+}
+.page-title {
+}
+.site-title {
+  padding-top: 5px;
+  font-family: cursive;
+}
+.tabcontent {
+  
+}
+.nav-link, .nav-link:hover {
+  color: white;
+}
+.tab-links > a, .tab-links > a:hover {
+  color: white;
+}
+.light-link {
+  color: #0EE;
+}
