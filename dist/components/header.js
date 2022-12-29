@@ -1,10 +1,14 @@
 function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
+  if (string === 'sign') {
+      return 'Sign Proposal'
+  } else {
+      return string.charAt(0).toUpperCase() + string.slice(1);
+  }
 }
 
 function dynamicallyBuildNavigation(activePage) {
 
-    var links = ["documents", "events", "contact"]
+    var links = ["documents", "events", "contact", "sign"]
     let navigationHTML = ""
     let homeListClass = ""
     if (activePage === "home") {
