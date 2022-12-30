@@ -27,6 +27,15 @@ body {
   margin: auto;
   margin-bottom: 10px;
 }
+.old-sign-6 {
+  background-image: url(../images/old-sign-6.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+}
 .old-sign-2 {
   background-image: url(../images/old-sign-2.jpeg);
   background-repeat: no-repeat;
