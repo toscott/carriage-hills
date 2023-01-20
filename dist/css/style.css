@@ -36,6 +36,17 @@ body {
   margin: auto;
   margin-bottom: 10px;
 }
+
+.old-sign-7 {
+  background-image: url(../images/old-sign-7.jpeg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 350px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+  }
+
 .old-sign-2 {
   background-image: url(../images/old-sign-2.jpeg);
   background-repeat: no-repeat;
@@ -86,6 +97,26 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 350px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.new-sign-1 {
+  background-image: url(../images/new-sign-1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 0px;
+}
+
+.new-sign-2 {
+  background-image: url(../images/new-sign-2.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 250px;
   width: 500px;
   margin: auto;
   margin-bottom: 10px;
