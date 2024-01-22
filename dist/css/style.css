@@ -26,71 +26,6 @@ body {
   width: 500px;
   margin: auto
 }
-.old-sign-1 {
-  background-image: url(../images/old-sign-1.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 350px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-.old-sign-6 {
-  background-image: url(../images/old-sign-6.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 350px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-.old-sign-7 {
-  background-image: url(../images/old-sign-7.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 350px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 10px;
-  }
-
-.old-sign-2 {
-  background-image: url(../images/old-sign-2.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 350px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-.old-sign-3 {
-  background-image: url(../images/old-sign-3.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 350px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-.old-sign-4 {
-  background-image: url(../images/old-sign-4.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 350px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-.old-sign-5 {
-  background-image: url(../images/old-sign-5.jpeg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 350px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 10px;
-}
 .garage-sale {
   background-image: url(../images/YellowGarageSaleAdvertisement.png);
   background-repeat: no-repeat;
@@ -100,25 +35,13 @@ body {
   margin: auto;
   margin-bottom: 10px;
 }
-
-.new-sign-1 {
-  background-image: url(../images/new-sign-1.png);
+.annual-meeting {
+  background-image: url(https://carriage-hills-subdivision.s3.us-east-2.amazonaws.com/documents/MeetingAgenda2024.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  height: 615px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 0px;
-}
-
-.new-sign-2 {
-  background-image: url(../images/new-sign-2.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 307px;
-  width: 500px;
-  margin: auto;
-  margin-bottom: 10px;
+  height: 1100px;
+  width: 800px;
+  margin: auto
 }
 .navigation ul{
   display: inline-block;
