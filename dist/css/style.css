@@ -1,6 +1,7 @@
 body {
   padding-bottom: 70px;
   background-color: #eee;
+  background-image: url(../images/pumpkin-background.jpg)
 }
 .active > a {
   color: #64757d !important;
