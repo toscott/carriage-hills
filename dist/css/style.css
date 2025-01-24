@@ -1,7 +1,7 @@
 body {
   padding-bottom: 70px;
   background-color: #eee;
-  background-image: url(../images/Snowman2.jpeg)
+#  background-image: url(../images/Snowman2.jpeg)
 }
 .active > a {
   color: #64757d !important;
@@ -19,8 +19,8 @@ body {
   width: 500px;
   margin: auto
 }
-.easter-2024 {
-  background-image: url(https://carriage-hills-subdivision.s3.us-east-2.amazonaws.com/documents/2024-03-10-easter.png);
+.easter-2025 {
+  background-image: url(../images/happy-easter-2025.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   height: 500px;
