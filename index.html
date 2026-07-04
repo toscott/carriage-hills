@@ -165,9 +165,10 @@
     const fireworks = new Fireworks.default(container, {
       autoresize: true,
       opacity: 0.5,
-      particles: 50,
+      particles: 60,
       trace: 3,
-      explosion: 5
+      explosion: 5,
+      traceSpeed: 1
     });
 
     // Start the show on load
@@ -177,7 +178,7 @@
     setTimeout(() => {
       fireworks.stop();
       container.remove(); // Removes container from DOM
-    }, 5000);
+    }, 8000);
 </script>
 </body>
 </html>
