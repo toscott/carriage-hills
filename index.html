@@ -157,5 +157,27 @@
     </div>
 </div>
 <carriage-hills-footer-component></carriage-hills-footer-component>
+<div class="firework-container"
+     style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 9999; pointer-events: none;"></div>
+<script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
+<script>
+    const container = document.querySelector('.firework-container');
+    const fireworks = new Fireworks.default(container, {
+      autoresize: true,
+      opacity: 0.5,
+      particles: 50,
+      trace: 3,
+      explosion: 5
+    });
+
+    // Start the show on load
+    fireworks.start();
+
+    // Stop the show after 5 seconds (optional)
+    setTimeout(() => {
+      fireworks.stop();
+      container.remove(); // Removes container from DOM
+    }, 5000);
+</script>
 </body>
 </html>

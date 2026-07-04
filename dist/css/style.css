@@ -1,7 +1,9 @@
 body {
   padding-bottom: 70px;
-  background-color: #eee;
+  background-image: url(../images/fourth-of-july.jpeg);
+#  background-color: #eee;
 #  background-image: url(../images/Snowman2.jpeg)
+
 }
 .active > a {
   color: #64757d !important;
