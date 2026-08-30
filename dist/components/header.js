@@ -4,7 +4,7 @@ function capitalizeFirstLetter(string) {
 
 function dynamicallyBuildNavigation(activePage) {
 
-    var links = ["documents", "events", "contact"]
+    var links = ["documents", "dues", "events", "contact"]
     let navigationHTML = ""
     let homeListClass = ""
     if (activePage === "home") {
